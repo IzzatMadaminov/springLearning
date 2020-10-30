@@ -19,11 +19,8 @@ public class DemoApplication {
 	public CommandLineRunner CommandLineRunner(ApplicationContext ctx) {
 		return args -> {
 			System.out.println("Bean springboot:");
-			String[] beanNames = ctx.getBeanDefinitionNames();
-			Arrays.sort(beanNames);
-			for (String beanName : beanNames) {
-				System.out.println(beanName);
-			}
+
+
 		};
 	}
 
